@@ -1,0 +1,90 @@
+# Swiggy 2025 Power BI Dashboard (3 Pages)
+
+Hi
+This is my Power BI project based on a Swiggy-style food delivery dataset for the year 2025.
+
+I created this dashboard to practice:
+- Excel data cleaning & column creation
+- Power BI visuals
+- DAX measures
+- Multi-page report designing
+
+---
+
+## Dataset Info
+- Year: 2025 (Jan to Dec)
+- Total records: 50,000 orders
+- Type: Raw transactional practice dataset
+
+Main columns:
+- Order ID, Order Timestamp
+- City, Locality
+- Restaurant Name, Cuisine Category
+- Order Value, Discount, Total Payable
+- Delivery time, SLA, Delay
+- Order Status (Delivered / Cancelled / Refunded)
+
+## Excel Work (Columns I Created)
+Before making the Power BI dashboard, I created some useful columns in Excel like:
+
+- Month Name  
+- Quarter  
+- YearMonth  
+- Hour  
+- Weekday  
+- Day Part (Breakfast / Lunch / Dinner etc.)
+- Delay Min = Actual Delivery - Promised Delivery
+- On Time Flag (1 = On time, 0 = Late)
+- SLA Bucket (<=25, 26-35, 36-45, 46-60, >60)
+
+## Profit & Cost Assumptions (For Practice)
+This project uses assumptions because real Swiggy profit data is not public.
+
+Assumptions used:
+- Platform Fee = 4% of Order Value
+- Food Cost = 52% of Order Value
+- Delivery Ops Cost = 18 + (Distance_km * 5)
+
+Using these, I calculated:
+- Gross Revenue
+- Total Cost
+- Profit
+- Profit Margin %
+## Power BI Dashboard Pages
+### Page 1: Executive Summary
+- Total Orders
+- Total Revenue
+- On Time %
+- Revenue Trend (Month wise)
+- Top Cities by Revenue
+- Cuisine Category Share
+- Orders by Status
+- Top Restaurants
+
+### Page 2: Delivery & SLA Performance
+- Avg Delivery Time
+- Avg Delay Min
+- SLA Bucket Chart
+- Avg Delivery Time by City
+- Delay by Day Part
+- Delivery Time Trend
+
+### Page 3: Cancellation & Loss Analysis
+- Cancelled Orders
+- Refunded Orders
+- Cancellation %
+- Cancellation Loss
+- Refund Loss
+- Total Loss Trend
+- Top Restaurants causing Loss
+
+## Tools Used
+- Microsoft Excel
+- Power BI Desktop
+- DAX
+
+## Note
+This is a demo/practice project made for learning and portfolio.
+All revenue/cost/profit calculations are assumed for practice purpose.
+
+Thanks for checking my project!
